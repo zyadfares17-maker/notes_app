@@ -3,7 +3,9 @@ import 'package:nots_app/views/widgets/custom_appbar.dart';
 import 'package:nots_app/views/widgets/notes_list_view.dart';
 
 class NotesViewBody extends StatelessWidget {
-  const NotesViewBody({super.key, required CustomAppBar customAppBar});
+  const NotesViewBody({super.key, required this.customAppBar});
+
+  final CustomAppBar customAppBar;
 
   @override
   Widget build(BuildContext context) {
