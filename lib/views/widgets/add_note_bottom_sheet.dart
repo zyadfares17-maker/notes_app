@@ -17,13 +17,18 @@ class AddNoteBottomSeet extends StatelessWidget {
             CustomTextfiled(
               hintText: 'Title',
             ),
+
             SizedBox(height: 16,),
+            
             CustomTextfiled(hintText: 'Description', maxLines: 5,),
+            
             SizedBox(height: 32,),
+           
            CustomButton(title: 'Add ',
            color: KPrimaryColor,
            titleColor: Colors.black,
            ),
+           
            SizedBox(height: 24,),
           ],
         ),
