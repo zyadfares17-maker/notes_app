@@ -20,7 +20,7 @@ class AddNoteBottomSeet extends StatelessWidget {
 
             SizedBox(height: 16,),
             
-            CustomTextfiled(hintText: 'Description', maxLines: 5,),
+            CustomTextfiled(hintText: 'Content', maxLines: 5,),
             
             SizedBox(height: 32,),
            

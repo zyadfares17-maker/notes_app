@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nots_app/constants.dart';
 import 'package:nots_app/views/widgets/add_note_bottom_sheet.dart';
-import 'package:nots_app/views/widgets/custom_appbar.dart';
 import 'package:nots_app/views/widgets/notes_view_body.dart';
 
 class NotesView extends StatelessWidget {
@@ -32,9 +31,7 @@ class NotesView extends StatelessWidget {
         color: Colors.black,
         size: 32,),
       ),
-      body:  const NotesViewBody(
-        customAppBar: CustomAppBar()
-      ),
+      body:  NotesViewBody(),
     );
   }
 }
