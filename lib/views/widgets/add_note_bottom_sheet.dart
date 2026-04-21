@@ -25,7 +25,7 @@ class AddNoteBottomSeet extends StatelessWidget {
             SizedBox(height: 32,),
            
            CustomButton(title: 'Add ',
-           color: KPrimaryColor,
+           color: kPrimaryColor,
            titleColor: Colors.black,
            ),
            

@@ -13,11 +13,11 @@ final int maxLines;
       decoration: InputDecoration(
         hintText: hintText,
        hintStyle: TextStyle(
-          color: KPrimaryColor,
+          color: kPrimaryColor,
         ),
         border: buildBorder(),
         enabledBorder: buildBorder(),
-        focusedBorder: buildBorder(color: KPrimaryColor),
+        focusedBorder: buildBorder(color: kPrimaryColor),
       ),
     );
   }
