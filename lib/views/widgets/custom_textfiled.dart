@@ -11,8 +11,9 @@ final int maxLines;
     return TextFormField(
       onSaved: onSaved,
       maxLines: maxLines,
+      // ignore: body_might_complete_normally_nullable
       validator: (value) {
-        if (value?.isEmpty ?? true) {
+         if (value?.isEmpty ?? true) {
           return'Field is required';
         }
       },
@@ -33,6 +34,7 @@ final int maxLines;
     return OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
         borderSide: BorderSide(
+          // ignore: dead_null_aware_expression, dead_code
           color: color ?? Colors.white)
       );
   }
