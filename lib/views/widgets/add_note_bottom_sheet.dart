@@ -13,11 +13,11 @@ class AddNoteBottomSheet extends StatelessWidget {
       child: BlocConsumer<AddNoteCubit, AddNoteState>(
         listener: (context, state) {
           if (state is AddNoteFailure) {
-            // ignore: avoid_print
             print('failed to add note ${state.errorMessage}');
           }
       
           if (state is AddNoteSuccess) {
+            
             Navigator.pop(context);
           }
         },

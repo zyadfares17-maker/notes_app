@@ -4,7 +4,7 @@ import 'package:meta/meta.dart';
 import 'package:nots_app/constants.dart';
 import 'package:nots_app/models/note_model.dart';
 
-part 'notes_cubit_state.dart';
+part 'notes_state.dart';
 
 class NotesCubit extends Cubit<NotesState> {
   NotesCubit() : super(NotestInitial());
@@ -16,7 +16,7 @@ class NotesCubit extends Cubit<NotesState> {
    
   var notesbox = Hive.box<NoteModel>(kNotesBox);
 
-   notes = notesbox.values.toList();
+  notes = notesbox.values.toList();
 
     
   }

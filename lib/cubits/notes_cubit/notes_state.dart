@@ -1,4 +1,4 @@
-part of 'notes_cubit_cubit.dart';
+part of 'notes_cubit.dart';
 
 @immutable
 sealed class NotesState {}
