@@ -5,6 +5,7 @@ import 'package:nots_app/constants.dart';
 import 'package:nots_app/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:nots_app/models/note_model.dart';
 import 'package:nots_app/views/widgets/Custom%20_button.dart';
+import 'package:nots_app/views/widgets/colors_list_view.dart';
 import 'package:nots_app/views/widgets/custom_textfiled.dart';
 
 class AddNoteForm extends StatefulWidget {
@@ -45,11 +46,12 @@ class _AddNoteFormState extends State<AddNoteForm> {
             hintText: 'Subtitle',
             maxLines: 5,
           ),
+                      ColorsListView(),
 
           const SizedBox(height: 32),
-
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {
+              
               return CustomButton(
                 isLoading: state is AddNoteLoading ? true : false,
                 title: 'Add ',
